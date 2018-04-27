@@ -28,4 +28,16 @@
 
   </article>
 
+  <div>
+    <h2>Reviews</h2>
+    <%= render @product.reviews.order(id: :desc) %>
+  </div>
+
+  <% if current_user %>
+    <h2>Add a review:</h2>
+    <%= render 'reviews/new' %>
+  <% else %>
+    Please <%= link_to 'Login', '/login' %> or <%= link_to 'Signup', '/signup' %> to add a review
+  <% end %>
+
 </section>

@@ -1,0 +1,19 @@
+<p>
+  <strong>Rating:</strong>
+  <%= review.rating %>/5
+</p>
+
+<p>
+  <strong>description:</strong>
+  <%= review.description %>
+</p>
+
+<% if current_user == review.user %>
+
+<p>
+  <%= button_to 'Delete Review', [review.product, review],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>
+
+<% end %>
