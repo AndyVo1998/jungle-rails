@@ -5,8 +5,8 @@
   </header>
 
   <% if cart.empty? %>
-    <h1>Your cart is empty, back to shopping: <%= link_to "Home", root_path %></h1>
-    <% else %>
+    <h1>Your cart is currently empty, back to shopping <%= link_to "Home", root_path %></h1>
+  <% else %>
 
   <div class="panel panel-default items">
     <table class="table table-bordered">
