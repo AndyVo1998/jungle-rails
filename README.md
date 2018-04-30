@@ -29,3 +29,9 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Stripe
 
 ##Screenshots
+![Admin Categories Page](hhttps://github.com/AndyVo1998/jungle-rails/blob/master/docs/AdminCategoriesPage.png)
+![Admin New Category Page](https://github.com/AndyVo1998/jungle-rails/blob/master/docs/AdminNewCategoryPage.png)
+![Cart Page](https://github.com/AndyVo1998/jungle-rails/blob/master/docs/CartPage.png)
+![Empty Cart Page](https://github.com/AndyVo1998/jungle-rails/blob/master/docs/EmptyCartPage.png)
+![Order Page](https://github.com/AndyVo1998/jungle-rails/blob/master/docs/OrderPage.png)
+![Product Page](https://github.com/AndyVo1998/jungle-rails/blob/master/docs/ProductPage.png)
