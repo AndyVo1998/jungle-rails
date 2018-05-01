@@ -26,7 +26,6 @@ RSpec.feature "ProductDetails", type: :feature, js: true do
     expect(page).to have_css 'article.product', count: 10
     first('article.product').find_link('Details »').click
     # save_screenshot
-    sleep 3
     puts page.html
   end
 end
