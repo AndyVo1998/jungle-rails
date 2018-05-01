@@ -17,7 +17,7 @@ RSpec.feature "ProductDetails", type: :feature, js: true do
     end
   end
 
-  scenario "They see all products" do
+  scenario "They see product details page" do
     # ACT
     visit root_path
 
