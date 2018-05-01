@@ -6,7 +6,7 @@ RSpec.feature "AddToCarts", type: :feature, js: true do
   before :each do
     @category = Category.create! name: 'Apparel'
 
-    10.times do |n|
+    1.times do |n|
       @category.products.create!(
         name:  Faker::Hipster.sentence(3),
         description: Faker::Hipster.paragraph(4),
@@ -15,14 +15,14 @@ RSpec.feature "AddToCarts", type: :feature, js: true do
         price: 64.99
       )
     end
+  end
 
   scenario "They are able to add item to cart" do
     # ACT
     visit root_path
+    first('article.product').find_link('Add').click
 
     # DEBUG / VERIFY
-    expect(page).to have_css 'article.product', count: 10
-    first('article.product').find_link('Add').click
     puts page.html
   end
 end

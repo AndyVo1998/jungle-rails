@@ -20,6 +20,8 @@ RSpec.feature "UserLogins", type: :feature, js: true do
     click_button 'Submit'
 
     # DEBUG / VERIFY
+    sleep 4
+    expect(page).to have_css 'h1'
     save_screenshot
     puts page.html
   end

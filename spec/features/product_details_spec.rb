@@ -20,11 +20,11 @@ RSpec.feature "ProductDetails", type: :feature, js: true do
   scenario "They see product details page" do
     # ACT
     visit root_path
+    first('article.product').find_link('Details »').click
 
     # DEBUG / VERIFY
     # save_screenshot
-    expect(page).to have_css 'article.product', count: 10
-    first('article.product').find_link('Details »').click
+    expect(page).to have_css 'article.product-details'
     # save_screenshot
     puts page.html
   end
